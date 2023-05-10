@@ -54,33 +54,58 @@ header img{
     position: relative;
 }
 
-.buttons{
+.upload{
     display: flex;
     justify-content: center;
 }
 
-#buttonsList{
-    list-style: none;
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 20px 0;
 }
 
-li{
-  margin: 50px 0;
-  display: flex;
-    justify-content: center;
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
 }
 
+.submit{
+    margin-top: 20px;
+}
 
+#myFile{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 700;
+}
 
 .btn{
-    /*position: absolute;*/
-    color: #f15555;
+    width: 100%;
+    height: 45px;
     background: #FAF9F3;
-    text-decoration: none;
+    border-color: black;
+    outline: none;
     border-radius: 6px;
-    padding: 5px 10px; /* increase padding */
-    font-size: 18px; /* increase font size */
-    transition: .5s;
     cursor: pointer;
+    font-size: 1.5em;
+    color: #f15555;
+    font-weight: 700;
+    transition: .5s;
 }
 
 .btn:hover {

@@ -61,102 +61,45 @@ header img{
 
 
 
-
-
-.input-box {
-    position: relative;
-    width: 17%;
-    min-width: 200px;
-    height: 50px;
-    border-bottom: 2px solid black;
-    margin: 30px 0;
+.checkboxWrapper{
+        display: flex;
+    justify-content: center;
+      overflow-x: auto;
 }
-
-.input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    color: black;
-    font-weight: 600;
-    padding: 0 35px 0 5px;
-}
-::placeholder{
-    color: #FAF9F3;
-    font-size: 1.2em;
-    font-weight: 400;
-}
-
-
-.btn{
-   width: 120px;
-   margin: 10px;
-   font-size: 24px;
-    height: 45px;
-    background: #FAF9F3;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.5em;
-    color: #f15555;
-    font-weight: 700;
-    transition: .5s;
-}
-
-
-.btn:hover {
-    background: black;
-    color: #FAF9F3;
-}
-
-.flex-search {
+.flex-checkbox{
   display: flex;
   flex-direction: row;
-    background-color: #f15555;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     height: auto;
-    margin-left: 10px;
+    font-size: 44px
 }
-.search-button{
-  width: 120px;
-  height: 40px;
-  margin: 10px;
-  font-size: 24px;
-   flex-grow: 1;
-}
-.search-category{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.search-label {
-  flex-basis: 150px;
-  width: 120px;
-  height: 40px;
-  font-size: 24px;
-   flex-grow: 1;
-  margin-left: 5px;
-  white-space: nowrap;
+.checkboxWrapper label{
+     margin-right: 50px;
+        font-size: 22px
 
 }
-
-.search-input {
-  flex-basis: 200px;
-  width: 120px;
-  height: 40px;
-  margin-right: 11px;
-  margin-left: 11px;
-  font-size: 20px;
-  flex-grow: 5;
+.backButton{
+    position: absolute;
+    left: 20%;
+    color: #FAF9F3;
+    background: #f15555;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 5px 10px; /* increase padding */
+    font-size: 18px; /* increase font size */
+    transition: .5s;
 }
 
+.backButton:hover {
+    background: black;
+    color: #FAF9F3;
+}
 
-
+.backToHome{
+    margin-bottom: 200px;
+}
 
 
 /*
@@ -202,7 +145,6 @@ Arrange every second row in the table by color*/
 }
 
 .tableWrapper {
-    margin-bottom: 30px;
     display: flex;
     justify-content: center;
 }
@@ -227,26 +169,6 @@ Arrange every second row in the table by color*/
   transition: .5s;
 }
 
-.backButton{
-    position: absolute;
-    left: 20%;
-    color: #FAF9F3;
-    background: #f15555;
-    text-decoration: none;
-    border-radius: 6px;
-    padding: 5px 10px; /* increase padding */
-    font-size: 18px; /* increase font size */
-    transition: .5s;
-}
-
-.backButton:hover {
-    background: black;
-    color: #FAF9F3;
-}
-
-.backToHome{
-    margin-bottom: 200px;
-}
 
 @media  screen and (max-width: 900px) {
 .flex-search {
