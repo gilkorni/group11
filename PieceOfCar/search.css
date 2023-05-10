@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+
+}
+
+body{
+    min-height: 100vh;
+    background: #FAF9F3;
+    font-family: Arial, helvetica, sans-serif;
+}
+
+/*this class was created as a solution for a problem with the animation while reloading the screen*/
+.ForRefreshClass{
+    position: relative;
+    color: transparent;
+}
+
+
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 90px;
+}
+
+.title{
+    position: relative;
+    animation-name: titleAni;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.title h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    user-select: none;
+    position: relative;
+}
+
+.title img{
+    width: 250px;
+    position: relative;
+}
+
+@keyframes titleAni {
+    0% {right: -1000px;}
+    100% {right: 0;}
+}
+
+.container-contact{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+#contact-header{
+    background: #2B2B2B;
+    COLOR: #f15555;
+
+}
+
+
+.flex-search {
+  max-width: 1440px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+.search-button{
+      width: 120px;
+  height: 40px;
+  margin: 10px;
+  font-size: 24px;
+   flex-grow: 1;
+}
+.search-category{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.search-label {
+      flex-basis: 150px;
+  width: 120px;
+  height: 40px;
+  font-size: 24px;
+   flex-grow: 1;
+  margin-left: 5px;
+  white-space: nowrap;
+
+}
+
+.search-input {
+      flex-basis: 200px;
+  width: 120px;
+  height: 40px;
+  margin-right: 11px;
+  margin-left: 11px;
+  font-size: 20px;
+  flex-grow: 5;
+}
+
+
+
+
+/*
+table
+ */
+.content-table{
+      width: 80%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    front-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.content-table thead tr{
+    background-color: #f15555;
+    color: #FAF9F3;
+    text-align: left ;
+    font-weight: bold;
+}
+.content-table th,
+/*
+Arrangement of rows in relation to the table
+ */
+.content-table td{
+    padding: 12px 15px;
+}
+.content-table tbody tr {
+    border-bottom: 1px solid #FAF9F3;
+}
+/*
+Arrange every second row in the table by color*/
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid #f15555;
+}
+.content-table tbody tr.actvie-row {
+    font-weight: bold;
+    color: #f15555;
+}
