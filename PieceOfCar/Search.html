@@ -19,32 +19,37 @@
                             <h1>Search</h1>
     </div>
 </header>
+
+<div class="searchWrapper">
+
 <div class="flex-search">
-          <div class="search-category">
-    <label for="site-search" class="search-label" >type of car:</label>
-<input type="search" class="search-input" id="site-search1" name="q">
-              </div>
-              <div class="search-category">
-<label for="site-search" class="search-label"> Year of model:</label>
-<input type="search"  class="search-input" id="site-search2" name="q">
-              </div>
-              <div class="search-category">
-<label for="site-search" class="search-label" >Item type:</label>
-<input type="search"   class="search-input" id="site-search3" name="q">
-                  </div>
-              <div class="search-category">
-<label for="site-search" class="search-label" >area:</label>
-<input type="search"  class="search-input" id="site-search4" name="q">
-                  </div>
-              <div class="search-button1">
+    <form action="#">
+        <div class=" flex-search">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="search-label"></ion-icon></span>
+                    <input class="search__input" type="text" required placeholder="type of car">
+                </div>
+               <div class="input-box">
+                    <span class="icon"><ion-icon name="search-label"></ion-icon></span>
+                    <input class="search__input" type="text" required placeholder="Year of model">
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="search-label"></ion-icon></span>
+                    <input class="search__input" type="text" required placeholder="Item type">
+                </div>
+                 <div class="input-box">
+                    <span class="icon"><ion-icon name="search-label"></ion-icon></span>
+                    <input class="search__input" type="text" required placeholder="area">
+                </div>
+                <button type="search-button" class="btn">search</button>
+        </div>
+            </form>
+        </div>
+    </div>
 
-<button class="search-button" >Search</button>
-</div>
 
-</div>
-
-
- <table class="content-table">
+<div class="tableWrapper">
+     <table class="content-table">
         <thead>
             <tr>
                 <th>select </th>
@@ -75,5 +80,7 @@
             </tr>
         </tbody>
     </table>
+</div>
+
 </body>
 </html>

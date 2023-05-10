@@ -12,7 +12,7 @@ body{
     font-family: Arial, helvetica, sans-serif;
 }
 
-/*this class was created as a solution for a problem with the animation while reloading the screen*/
+
 .ForRefreshClass{
     position: relative;
     color: transparent;
@@ -63,14 +63,67 @@ body{
     COLOR: #f15555;
 
 }
+/*
+חלק שעושה עכשיו
+ */
 
+.input-box {
+    position: relative;
+    width: 17%;
+    min-width: 200px;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+::placeholder{
+    color: #FAF9F3;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+
+.btn{
+   width: 120px;
+   margin: 10px;
+   font-size: 24px;
+    height: 45px;
+    background: #FAF9F3;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #f15555;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: black;
+    color: #FAF9F3;
+}
 
 .flex-search {
-  max-width: 1440px;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
+  display: flex;
+  flex-direction: row;
+    background-color: #f15555;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin-left: 10px;
 }
 .search-button{
       width: 120px;
@@ -112,11 +165,11 @@ body{
 table
  */
 .content-table{
-      width: 80%;
+    min-width: 80%;
+
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: 25px ;
     front-size: 0.9em;
-    min-width: 400px;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -126,6 +179,7 @@ table
     color: #FAF9F3;
     text-align: left ;
     font-weight: bold;
+
 }
 .content-table th,
 /*
@@ -134,7 +188,11 @@ Arrangement of rows in relation to the table
 .content-table td{
     padding: 12px 15px;
 }
+.content-table btn{
+    padding: 60px 15px;
+}
 .content-table tbody tr {
+
     border-bottom: 1px solid #FAF9F3;
 }
 /*
@@ -149,3 +207,17 @@ Arrange every second row in the table by color*/
     font-weight: bold;
     color: #f15555;
 }
+.tableWrapper {
+    display: flex;
+    justify-content: center;
+}
+.searchWrapper {
+    display: flex;
+    justify-content: center;
+      overflow-x: auto;
+}
+@media screen and (min-width: 768px) {
+  .content-table {
+    width: 80%;
+  }
+  }

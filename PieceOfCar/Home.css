@@ -39,3 +39,12 @@ header img{
     user-select: none;
     position: relative;
 }
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+#buttonsList{
+    list-style: none;
+}
