@@ -63,30 +63,19 @@
               <tr>
                 <td>
                     <button data-modal-target="#modal" type="select-button" class="btn-select">select</button>
-                    <div class="modal" id="modal">
-                        <div class="modal-header">
-                            <div class="modal-title">Seller's information</div>
-                            <button data-close-button class="close-button">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            Name:
-                            Phone Number:
-                        </div>
-                    </div>
-
                 </td>
                 <td>Data 1</td>
                 <td>Data 2</td>
                 <td>Data 3</td>
             </tr>
             <tr>
-                <td><button type="select-button" class="btn-select">select</button></td>
+                <td><button data-modal-target="#modal" type="select-button" class="btn-select">select</button></td>
                 <td>Data 1</td>
                 <td>Data 2</td>
                 <td>Data 3</td>
             </tr>
             <tr>
-                <td><button type="select-button" class="btn-select">select</button></td>
+                <td><button data-modal-target="#modal" type="select-button" class="btn-select">select</button></td>
                 <td>Data 1</td>
                 <td>Data 2</td>
                 <td>Data 3</td>
@@ -97,6 +86,16 @@
 
 <div class="backToHome">
     <a class="backButton" href="Home.html">back to home page</a>
+</div>
+<div class="modal" id="modal">
+    <div class="modal-header">
+        <div class="modal-title">Seller's information</div>
+        <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+        Name:
+        Phone Number:
+    </div>
 </div>
 <div id="overlay"></div>
 <script src="search.js"></script>
