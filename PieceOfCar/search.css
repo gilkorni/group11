@@ -63,10 +63,44 @@ header img{
 }
 
 
+.flex_offer{
+  display: flex;
+  flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 7px;
+}
+.make-offer{
+   width: 120px;
+   margin: 7px;
+   font-size: 16px;
+    height: 28px;
+    background: #f15555;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #FAF9F3;
+    font-weight: 700;
+    transition: .5s;
+}
 
 
+.make-offer:hover {
+    background: black;
+    color: #FAF9F3;
+}
 
+.modal-body p {
+  margin-bottom: 7px;
+}
 
+.flex_offer {
+  margin-top: 7px;
+}
 
 .input-box {
     position: relative;
@@ -93,7 +127,28 @@ header img{
     font-size: 1.2em;
     font-weight: 400;
 }
+input.My_offer  {
+    color: black;
+    font-size: 0.9em;
+    font-weight: 400;
+    text-align: center; /* Center aligns the text */
+    border: none; /* Removes the default borders */
+    border-bottom: 1px solid black; /* Adds a bottom border */
+    padding-bottom: 5px; /* Adds some space below the text */
+}
+input.My_offer:focus {
+    outline: none; /* Removes the default focus outline */
+    border: none; /* Removes the default border */
+    border-bottom: 1px solid black; /* Adds a bottom border */
+}
 
+
+.My_offer::placeholder {
+    border: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 400;
+}
 
 .btn{
    width: 120px;
@@ -372,6 +427,3 @@ footer p{
     cursor: pointer;
     font-size: 1.4em;
 }
-
-
-

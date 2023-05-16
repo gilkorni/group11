@@ -30,7 +30,7 @@
                     <input class="search__input" type="text" required placeholder="type of car">
                 </div>
                <div class="input-box">
-                    <input class="search__input" type="text" required placeholder="Year of model">
+                    <input class="search__input" type="number" min="1900" required placeholder="Year of model">
                 </div>
                 <div class="input-box">
                     <input class="search__input" type="text" required placeholder="Item type">
@@ -48,7 +48,7 @@
      <table class="content-table">
         <thead>
             <tr>
-                <th>select </th>
+                <th>Bids</th>
                 <th>date</th>
                 <th>area</th>
                 <th>price</th>
@@ -58,20 +58,20 @@
         <tbody>
               <tr>
                 <td>
-                    <button data-modal-target="#modal" type="select-button" class="btn-select">select</button>
+                    <button data-modal-target="#modal" type="select-button" class="btn-select">Bid</button>
                 </td>
                 <td>Data 1</td>
                 <td>Data 2</td>
                 <td>Data 3</td>
             </tr>
             <tr>
-                <td><button data-modal-target="#modal" type="select-button" class="btn-select">select</button></td>
+                <td><button data-modal-target="#modal" type="select-button" class="btn-select">Bid</button></td>
                 <td>Data 1</td>
                 <td>Data 2</td>
                 <td>Data 3</td>
             </tr>
             <tr>
-                <td><button data-modal-target="#modal" type="select-button" class="btn-select">select</button></td>
+                <td><button data-modal-target="#modal" type="select-button" class="btn-select">Bid</button></td>
                 <td>Data 1</td>
                 <td>Data 2</td>
                 <td>Data 3</td>
@@ -79,19 +79,19 @@
         </tbody>
     </table>
 </div>
-
-<div class="backToHome">
-    <a class="backButton" href="Home.html">back to home page</a>
-</div>
 <div class="modal" id="modal">
     <div class="modal-header">
-        <div class="modal-title">Seller's information</div>
+        <div class="modal-title">Bidding information</div>
         <button data-close-button class="close-button">&times;</button>
     </div>
-    <div class="modal-body">
-        offer:
-        Phone Number:
+<div class="modal-body">
+    <p>Highest current offer: 10000</p>
+    <p>Auction end time: 15:43</p>
+    <div class="flex_offer">
+        <input class="My_offer" type="number" min="0" required placeholder="My offer">
+        <button type="button" class="make-offer">make offer</button>
     </div>
+</div>
 </div>
 <div id="overlay"></div>
 

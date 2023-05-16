@@ -54,10 +54,7 @@ header img{
     position: relative;
 }
 
-.buttons{
-    display: flex;
-    justify-content: center;
-}
+
 
 #buttonsList{
     list-style: none;
@@ -72,15 +69,17 @@ li{
 
 
 .btn{
-    /*position: absolute;*/
+    /position: absolute;/
     color: #f15555;
     background: #FAF9F3;
     text-decoration: none;
     border-radius: 6px;
     padding: 5px 10px; /* increase padding */
-    font-size: 18px; /* increase font size */
     transition: .5s;
     cursor: pointer;
+    font-size: 1.6em;
+    border: none;
+    outline: none;
 }
 
 .btn:hover {
@@ -112,4 +111,30 @@ footer p{
 .iconDown2{
     cursor: pointer;
     font-size: 1.4em;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    position: relative;
+    animation-name: wrapperAni;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.anotherWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f15555;
+    position: relative;
+    width: 400px;
+    height: 440px;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    overflow: hidden;
 }

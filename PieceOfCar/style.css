@@ -119,7 +119,27 @@ body{
     margin: 30px 0;
 }
 
+.input-box-r {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 10px 0;
+}
+
 .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box-r input {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -138,6 +158,14 @@ body{
 }
 
 .input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: black;
+    line-height: 57px;
+}
+
+.input-box-r .icon{
     position: absolute;
     right: 8px;
     font-size: 1.2em;
@@ -180,6 +208,7 @@ body{
     color: #f15555;
     font-weight: 700;
     transition: .5s;
+    margin-top: 15px;
 }
 
 .btn:hover {
