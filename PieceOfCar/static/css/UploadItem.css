@@ -143,3 +143,27 @@ footer p{
     cursor: pointer;
     font-size: 1.4em;
 }
+
+.anotherWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f15555;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+
+::placeholder{
+    color: white;
+    font-size: 1.2em;
+}
+
+h3{
+    color: white;
+    margin-bottom: 10px;
+}
