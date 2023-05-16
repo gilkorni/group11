@@ -287,6 +287,11 @@ Arrange every second row in the table by color*/
   transition: .5s;
 }
 
+.btn-select:hover {
+    background: black;
+    color: #FAF9F3;
+}
+
 .backButton{
     position: absolute;
     left: 20%;
