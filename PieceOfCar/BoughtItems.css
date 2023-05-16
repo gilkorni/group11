@@ -61,25 +61,7 @@ header img{
 
 
 
-.checkboxWrapper{
-        display: flex;
-    justify-content: center;
-      overflow-x: auto;
-}
-.flex-checkbox{
-  display: flex;
-  flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    height: auto;
-    font-size: 44px
-}
-.checkboxWrapper label{
-     margin-right: 50px;
-        font-size: 22px
 
-}
 .backButton{
     position: absolute;
     left: 20%;

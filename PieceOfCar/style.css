@@ -133,7 +133,7 @@ body{
 
 ::placeholder{
     color: #FAF9F3;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 400;
 }
 
@@ -225,8 +225,7 @@ body{
     text-decoration: underline;
 }
 
-.down{
-    /*background: green;*/
+footer{
     display: flex;
     width: 100%;
     padding-right: 250px;
@@ -237,19 +236,17 @@ body{
     gap: 40px;
 }
 
-.down p{
+footer p{
     font-size: 1.4em;
     font-weight: 600;
 }
 
-.down .iconDown{
-    font-size: 1.4em;
-}
-
 .iconDown1{
     cursor: pointer;
+    font-size: 1.4em;
 }
 
 .iconDown2{
     cursor: pointer;
+    font-size: 1.4em;
 }

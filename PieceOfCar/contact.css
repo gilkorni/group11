@@ -74,20 +74,3 @@ header img{
     margin-left: 30px;
 
 }
-.backButton{
-    position: absolute;
-    bottom: 30px;
-    left: 35%;
-    color: #f15555;
-    background: #FAF9F3;
-    text-decoration: none;
-    border-radius: 6px;
-    padding: 5px 10px; /* increase padding */
-    font-size: 18px; /* increase font size */
-    transition: .5s;
-}
-
-.backButton:hover {
-    background: black;
-    color: #FAF9F3;
-}
