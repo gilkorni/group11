@@ -20,6 +20,11 @@ header {
     justify-content: space-between;
 }
 
+header a{
+    text-decoration: none;
+    color: black;
+}
+
 .rightUp{
     display: flex;
     align-items: center;

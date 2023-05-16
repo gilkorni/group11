@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
     font-family: 'Arial';
-    user-select: none;
+   font-size: 18px;
 }
 
 body{
     min-height: 100vh;
     background: #FAF9F3;
+    font-family: Arial, helvetica, sans-serif;
 }
 
 header {
@@ -37,11 +38,6 @@ header img{
     position: relative;
 }
 
-header a{
-    text-decoration: none;
-    color: black;
-}
-
 .title{
     display: flex;
     align-items: center;
@@ -59,51 +55,17 @@ header a{
     position: relative;
 }
 
-.upload{
-    display: flex;
-    justify-content: center;
-}
-
-.input-box{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    border-bottom: 2px solid black;
-    margin: 20px 0;
-}
 
 
-.input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    color: black;
-    font-weight: 600;
-    padding: 0 35px 0 5px;
-}
 
-.submit{
-    margin-top: 20px;
-}
 
-#myFile{
-    width: 100%;
-    height: 45px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 1.5em;
-    font-weight: 700;
-}
+
 
 .btn{
     width: 100%;
     height: 45px;
     background: #FAF9F3;
-    border-color: black;
+    border: none;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
@@ -118,28 +80,62 @@ header a{
     color: #FAF9F3;
 }
 
-footer{
+
+
+
+
+
+.wrapper{
     display: flex;
-    width: 100%;
-    padding-right: 250px;
-    margin-top: 40px;
-    justify-content: right;
+    justify-content: center;
+}
+
+.wrapper{
+    position: relative;
+    animation-name: wrapperAni;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.anotherWrapper{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    z-index: 99;
-    gap: 40px;
+    background: #f15555;
+    position: relative;
+    width: 400px;
+    height: 440px;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    overflow: hidden;
 }
 
-footer p{
-    font-size: 1.4em;
+
+
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
     font-weight: 600;
+    padding: 0 35px 0 5px;
 }
 
-.iconDown1{
-    cursor: pointer;
-    font-size: 1.4em;
-}
-
-.iconDown2{
-    cursor: pointer;
-    font-size: 1.4em;
+::placeholder{
+    color: #FAF9F3;
+    font-size: 1em;
+    font-weight: 400;
 }
