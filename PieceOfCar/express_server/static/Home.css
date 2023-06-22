@@ -1,0 +1,61 @@
+
+
+#buttonsList{
+    list-style: none;
+}
+
+li{
+  margin: 50px 0;
+  display: flex;
+    justify-content: center;
+}
+
+
+
+.btn{
+    /position: absolute;/
+    color: #f15555;
+    background: #FAF9F3;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 5px 10px; /* increase padding */
+    transition: .5s;
+    cursor: pointer;
+    font-size: 1.6em;
+    border: none;
+    outline: none;
+    color:#f15555;
+
+}
+
+.btn:hover {
+    background: black;
+    color: #FAF9F3;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    position: relative;
+    animation-name: wrapperAni;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.anotherWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f15555;
+    position: relative;
+    width: 400px;
+    height: 666px;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    overflow: hidden;
+}

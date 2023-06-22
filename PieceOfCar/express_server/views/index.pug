@@ -1,0 +1,66 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title PieceOFCar
+    script(defer, src="login.js")
+    link(rel="stylesheet", href="Connection.css")
+
+  body(class="preload")
+    div(class="ForRefreshClass")
+      p a
+
+    div(class="title")
+      img(src="car.png")
+      h2(data-value="PIECEOFCAR") PIECEOFCAR
+
+    div(class="wrapper")
+      div(class="anotherWrapper")
+        div(class="form-box login")
+          form(action="/login", id="login", method="post")
+            h2 Login
+            div(class="input-box")
+              span(class="icon")
+                ion-icon(name="mail-open")
+              input.login__input(name="email", type="email", required, placeholder="Email")
+            div(class="input-box")
+              span(class="icon")
+                ion-icon(name="lock-open")
+              input.login__input(name="password", type="password", required, placeholder="Password")
+            div(class="remember-forgot")
+              label
+                input(type="checkbox")
+              a(href="#") Forgot Password?
+            button.btn(type="submit", id="loginButton") Login
+            div(class="login-registered")
+              p
+                | Don't have an account?
+                a.register-link(href="#") Register
+
+        div(class="form-box register")
+          form(action="/Registration", id="registrationForm", method="post", onsubmit="return validateForm()")
+            h2 Registration
+            div(class="input-box-r")
+              span(class="icon")
+                ion-icon(name="person")
+              input.login__input(type="text", name="name", required, placeholder="Full name")
+            div(class="input-box-r")
+              span(class="icon")
+                ion-icon(name="mail-open")
+              input.login__input(type="email", name="email", required, placeholder="Email")
+            div(class="input-box-r")
+              span(class="icon")
+                ion-icon(name="lock-open")
+              input.login__input(type="password", name="password", required, placeholder="Password")
+            div(class="input-box-r")
+              span(class="icon")
+                ion-icon(name="phone-portrait")
+              input.login__input(type="tel", name="phone", required, placeholder="Phone Number")
+            button.btn(type="submit") Register
+            div(class="login-link")
+              p
+                | Already have an account?
+                a.register-link(href="#") Login
+
+    script(type="module", src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js")
+    script(nomodule, src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js")

@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+    user-select: none;
+}
+
+body{
+    min-height: 100vh;
+    background: #FAF9F3;
+}
+
+/*this class was created as a solution for a problem with the animation while reloading the screen*/
+.ForRefreshClass{
+    position: relative;
+    color: transparent;
+}
+
+
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-left: 90px;
+}
+
+.title{
+    position: relative;
+    animation-name: titleAni;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.title h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    user-select: none;
+    position: relative;
+}
+
+.title img{
+    width: 250px;
+    position: relative;
+}
+
+@keyframes titleAni {
+    0% {right: -1000px;}
+    100% {right: 0;}
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    position: relative;
+    animation-name: wrapperAni;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes wrapperAni {
+    0% {bottom: -700px;}
+    100% {bottom: 0;}
+}
+
+.anotherWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f15555;
+    position: relative;
+    width: 400px;
+    height: 440px;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+
+.form-box h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.wrapper .form-box.login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+.input-box-r {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 10px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box-r input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+::placeholder{
+    color: #FAF9F3;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: black;
+    line-height: 57px;
+}
+
+.input-box-r .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: black;
+    line-height: 57px;
+}
+
+.remember-forgot{
+    font-size: .9em;
+    color: black;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input{
+    accent-color: black;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: black;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #FAF9F3;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #f15555;
+    font-weight: 700;
+    transition: .5s;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background: black;
+    color: #FAF9F3;
+}
+
+.login-registered{
+    font-size: .9em;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-registered p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.login-registered p a:hover{
+    text-decoration: underline;
+}
+
+.login-link{
+    font-size: .9em;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-link p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.login-link p a:hover{
+    text-decoration: underline;
+}

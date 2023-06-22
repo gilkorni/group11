@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7180ed08-b7f9-43d6-a978-3a1e1fdb6f38" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Pug File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2PsDPl2OVc6mmYw9ILJ5g3p6QaB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "18.16.0",
+    "javascript.nodejs.core.library.typings.version": "18.16.0",
+    "last_opened_file_path": "C:/Users/Gil Kornitzer/Desktop/web216/PieceOfCar",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "watcher.settings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nadav\Desktop\projects\web\PieceOfCar\express_server" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7180ed08-b7f9-43d6-a978-3a1e1fdb6f38" name="Changes" comment="" />
+      <created>1684236876660</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684236876660</updated>
+      <workItem from="1684236878445" duration="1216000" />
+      <workItem from="1684840676616" duration="598000" />
+      <workItem from="1684912016508" duration="1818000" />
+      <workItem from="1684915019348" duration="7883000" />
+      <workItem from="1684930471871" duration="7826000" />
+      <workItem from="1685449363837" duration="1837000" />
+      <workItem from="1686127174510" duration="20000" />
+      <workItem from="1686299574985" duration="5947000" />
+      <workItem from="1686468848822" duration="13163000" />
+      <workItem from="1686488787990" duration="8580000" />
+      <workItem from="1686497509735" duration="3401000" />
+      <workItem from="1686586347441" duration="2435000" />
+      <workItem from="1686655498896" duration="5550000" />
+      <workItem from="1686815787437" duration="20870000" />
+      <workItem from="1686919323518" duration="227000" />
+      <workItem from="1686997464279" duration="46418000" />
+      <workItem from="1687269738601" duration="12375000" />
+      <workItem from="1687284928897" duration="602000" />
+      <workItem from="1687333252620" duration="12850000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

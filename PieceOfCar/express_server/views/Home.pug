@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title PieceOFCar
+    script(defer, src="script.js")
+    link(rel="stylesheet", href="Home.css")
+    link(rel="stylesheet", href="style.css")
+
+  body
+    include includes/header
+
+    .title
+      h2 Home
+
+    .wrapper
+      .anotherWrapper
+        ul#buttonsList
+          li.newButton
+            a(href="/uploadItem")
+              button.btn(type="button") Upload item
+          li.newButton
+            a(href="/Search")
+              button.btn(type="button") Search item
+          li.newButton
+            a(href="/MyItems")
+              button.btn(type="button") My items for sale
+          li.newButton
+            a(href="/BoughtItems")
+              button.btn(type="button") View bought items
+          li.newButton
+            a(href="/SoldItems")
+              button.btn(type="button") View sold items
+          li.newButton
+            a(href="/UpdateDetails")
+              button.btn(type="button") Update Details
+          li.newButton
+            a(href="/contact")
+              button.btn(type="button") Contact As
+
+    include includes/footer

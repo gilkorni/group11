@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>PieceOFCar</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="UploadItem.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="leftUp"><a class="disconnectButton" href="/signOut">
+          <h2>Disconnect</h2></a></div>
+      <div class="rightUp"><a href="/Home"><img src="car.png"></a><a href="/Home">
+          <h2 data-value="PIECEOFCAR">PIECEOFCAR</h2></a></div>
+    </header>
+    <div class="title">
+      <h2>Upload Item</h2>
+    </div>
+    <div class="upload">
+      <div class="anotherWrapper">
+        <form action="/uploadItem" method="post">
+          <div class="input-box">
+            <input class="login__input" name="car" type="text" required placeholder="Car">
+          </div>
+          <div class="input-box">
+            <input class="login__input" name="year" type="number" min="1900" required placeholder="Model year">
+          </div>
+          <div class="input-box">
+            <input class="login__input" name="itemtype" type="text" required placeholder="Item type">
+          </div>
+          <div class="input-box">
+            <input class="login__input" name="area" type="text" required placeholder="Area">
+          </div>
+          <div class="input-box">
+            <input class="login__input" name="price" type="number" required placeholder="Price">
+          </div>
+          <div class="submit">
+            <input class="btn" type="submit" value="Upload">
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>contact us:</p><span class="iconDown1">
+        <ion-icon name="call"></ion-icon></span><span class="iconDown2">
+        <ion-icon name="mail"></ion-icon></span>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

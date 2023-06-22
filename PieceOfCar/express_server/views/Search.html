@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>PieceOFCar</title>
+    <script defer src="search.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="preload">
+    <header>
+      <div class="leftUp"><a class="disconnectButton" href="/signOut">
+          <h2>Disconnect</h2></a></div>
+      <div class="rightUp"><a href="/Home"><img src="car.png"></a><a href="/Home">
+          <h2 data-value="PIECEOFCAR">PIECEOFCAR</h2></a></div>
+    </header>
+    <div class="title">
+      <h2>Search</h2>
+    </div>
+    <div class="searchWrapper">
+      <div class="flex-search">
+        <form action="/Search" method="post" name="searchForm">
+          <div class="flex-search">
+            <div class="input-box">
+              <select class="search__input" id="carDropdown" name="car">
+                <option value="">Select car type</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <input class="search__input" name="year" type="number" min="1900" placeholder="Year of model">
+            </div>
+            <div class="input-box">
+              <select class="search__input" id="itemtype" name="itemtype">
+                <option value="">Select item type</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <select class="search__input" id="areaDropdown" name="area">
+                <option value="">Select area</option>
+              </select>
+            </div>
+            <button class="btn" type="search-button">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="tableWrapper">
+      <table class="content-table">
+        <thead>
+          <tr>
+            <th>Bids</th>
+            <th>car</th>
+            <th>year</th>
+            <th>item</th>
+            <th>area</th>
+          </tr>
+        </thead>
+        <tbody>
+          <p>No search results found.</p>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="modal-title">Bidding information</div>
+        <button class="close-button" data-close-button>&times;</button>
+      </div>
+      <div class="modal-body">
+        <p id="highestOffer"></p>
+        <form action="/submitOffer" method="post">
+          <div class="flex_offer">
+            <input type="hidden" name="itemId" id="itemId">
+            <input type="hidden" name="itemPrice" id="itemPrice">
+            <input class="My_offer" type="number" name="offer" min="0" required placeholder="My offer">
+            <button class="make-offer" type="submit">Make offer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    <footer>
+      <p>contact us:</p><span class="iconDown1">
+        <ion-icon name="call"></ion-icon></span><span class="iconDown2">
+        <ion-icon name="mail"></ion-icon></span>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

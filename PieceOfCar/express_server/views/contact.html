@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>PieceOFCar</title>
+    <script defer src="contact.js"></script>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="preload">
+    <header>
+      <div class="leftUp"><a class="disconnectButton" href="/signOut">
+          <h2>Disconnect</h2></a></div>
+      <div class="rightUp"><a href="/Home"><img src="car.png"></a><a href="/Home">
+          <h2 data-value="PIECEOFCAR">PIECEOFCAR</h2></a></div>
+    </header>
+    <div class="title">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="Wrapper">
+      <div class="anotherWrapper">
+        <form action="/contact" method="post" onsubmit="return validateContactForm()" name="contactForm">
+          <div class="input-box">
+            <input class="login__input" name="name" type="text" required placeholder="Full name">
+          </div>
+          <div class="input-box">
+            <input class="login__input" name="phone" type="tel" required placeholder="Phone Number">
+          </div>
+          <div class="input-box">
+            <input class="login__input" type="email" name="email" required placeholder="Email">
+          </div>
+          <div class="input-box description">
+            <textarea class="login__input" name="description" required placeholder="Description" cols="30" rows="10"></textarea>
+          </div>
+          <div class="submit">
+            <input class="btn" type="submit" value="send">
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>contact us:</p><span class="iconDown1">
+        <ion-icon name="call"></ion-icon></span><span class="iconDown2">
+        <ion-icon name="mail"></ion-icon></span>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+  <script type="module" src="contact.js"></script>
+  <script nomodule src="contact.js"></script>
+</html>

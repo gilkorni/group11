@@ -1,0 +1,369 @@
+
+.flex_offer{
+  display: flex;
+  flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 7px;
+}
+.make-offer{
+   width: 120px;
+   margin: 7px;
+   font-size: 16px;
+    height: 28px;
+    background: #f15555;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #FAF9F3;
+    font-weight: 700;
+    transition: .5s;
+}
+
+
+.make-offer:hover {
+    background: black;
+    color: #FAF9F3;
+}
+
+.modal-body p {
+  margin-bottom: 7px;
+}
+
+.flex_offer {
+  margin-top: 7px;
+}
+
+.input-box {
+    position: relative;
+    width: 17%;
+    min-width: 200px;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+::placeholder{
+    color: #FAF9F3;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+input.My_offer  {
+    color: black;
+    font-size: 0.9em;
+    font-weight: 400;
+    text-align: center; /* Center aligns the text */
+    border: none; /* Removes the default borders */
+    border-bottom: 1px solid black; /* Adds a bottom border */
+    padding-bottom: 5px; /* Adds some space below the text */
+}
+input.My_offer:focus {
+    outline: none; /* Removes the default focus outline */
+    border: none; /* Removes the default border */
+    border-bottom: 1px solid black; /* Adds a bottom border */
+}
+
+
+.My_offer::placeholder {
+    border: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.btn{
+   width: 120px;
+   margin: 10px;
+   font-size: 24px;
+    height: 45px;
+    background: #FAF9F3;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #f15555;
+    font-weight: 700;
+    transition: .5s;
+}
+
+
+.btn:hover {
+    background: black;
+    color: #FAF9F3;
+}
+
+.flex-search {
+  display: flex;
+  flex-direction: row;
+    background-color: #f15555;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin-left: 10px;
+}
+.search-button{
+  width: 120px;
+  height: 40px;
+  margin: 10px;
+  font-size: 24px;
+   flex-grow: 1;
+}
+.search-category{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.search-label {
+  flex-basis: 150px;
+  width: 120px;
+  height: 40px;
+  font-size: 24px;
+   flex-grow: 1;
+  margin-left: 5px;
+  white-space: nowrap;
+
+}
+
+.search-input {
+  flex-basis: 200px;
+  width: 120px;
+  height: 40px;
+  margin-right: 11px;
+  margin-left: 11px;
+  font-size: 20px;
+  flex-grow: 5;
+}
+
+
+
+
+
+/*
+table
+ */
+.content-table{
+    width: 80%;
+    border-collapse: collapse;
+    margin: 25px ;
+    front-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow-x: auto;
+}
+.content-table thead tr{
+    background-color: #f15555;
+    color: #FAF9F3;
+    text-align: left ;
+    font-weight: bold;
+
+}
+.content-table th, .content-table td{
+    padding: 12px 15px;
+}
+.content-table btn{
+    padding: 60px 15px;
+}
+.content-table tbody tr {
+    border-bottom: 1px solid #FAF9F3;
+}
+/*
+Arrange every second row in the table by color*/
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid #f15555;
+}
+.content-table tbody tr.actvie-row {
+    font-weight: bold;
+    color: #f15555;
+}
+
+.tableWrapper {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.searchWrapper {
+    display: flex;
+    justify-content: center;
+      overflow-x: auto;
+}
+
+
+.btn-select{
+  width: 80px;
+  height: 40px;
+  border: none;
+  background: #f15555;
+  color: #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+  transition: .5s;
+}
+
+.btn-select:hover {
+    background: black;
+    color: #FAF9F3;
+}
+
+.backButton{
+    position: absolute;
+    left: 20%;
+    color: #FAF9F3;
+    background: #f15555;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 5px 10px; /* increase padding */
+    font-size: 18px; /* increase font size */
+    transition: .5s;
+}
+
+.backButton:hover {
+    background: black;
+    color: #FAF9F3;
+}
+
+.backToHome{
+    margin-bottom: 200px;
+}
+
+@media  screen and (max-width: 900px) {
+.flex-search {
+  display: flex;
+  flex-direction: column;
+    background-color: #f15555;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin-left: 10px;
+}
+    .input-box {
+    position: relative;
+    width:100px;
+    height: 25px;
+    border-bottom: 1px solid black;
+    margin: 20px 0;
+}
+
+    .content-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px ;
+    front-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow-x: auto;
+}
+}
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background: white;
+    width: 500px;
+    max-width: 80%;
+    transition: 200ms ease-in-out;
+}
+
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .modal-title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    outline: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: white;
+}
+
+.modal-body{
+    white-space: pre-line;
+    padding: 10px 15px;
+}
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    pointer-events:  none;
+    transition: 200ms ease-in-out;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.popup-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.2em; /* Adjust the font-size as desired */
+  color: white; /* Change the color to white */
+  font-weight: 400; /* Change the font weight to 400 */
+  padding: 0 35px 0 5px;
+}
+
+select option {
+  color: black; /* Change the color to black */
+  font-size: 1.2em; /* Adjust the font-size as desired */
+  font-weight: 400; /* Change the font weight to 400 */
+}

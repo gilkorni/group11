@@ -1,0 +1,26 @@
+modules:
+
+express , body-parser , mysql2 , path , cookie-parser , csvtojson ,pug-cli
+
+
+create tables path:
+http://localhost:3000/CreateTables
+
+delete tables path: 
+http://localhost:3000/DropTables
+
+
+
+tables creation:
+
+CREATE TABLE Uploads (id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT, car varchar(255) NOT NULL, year varchar(255) NOT NULL, itemtype varchar(255) NOT NULL, area varchar(255) NOT NULL, price varchar(255) NOT NULL, seller varchar(255) NOT NULL, buyer varchar(255) NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE UpdateDetails (id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT, name varchar(255) NOT NULL, password varchar(255) NOT NULL, phone varchar(255) NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE Contacts (id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT, name varchar(255) NOT NULL, phone varchar(255) NOT NULL, email varchar(255) NOT NULL, description varchar(255) NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE Registrations (id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT, name varchar(255) NOT NULL, phone varchar(255) NOT NULL, email varchar(255) NOT NULL, password varchar(255) NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE Connections (id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT, email varchar(255) NOT NULL, password varchar(255) NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE BoughtItems (id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT, car varchar(255) NOT NULL, year varchar(255) NOT NULL, itemtype varchar(255) NOT NULL, area varchar(255) NOT NULL, price varchar(255) NOT NULL, seller varchar(255) NOT NULL, buyer varchar(255) NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP) ENGINE=InnoDB DEFAULT CHARSET=utf8;

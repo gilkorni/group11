@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+
+  head
+    meta(charset="UTF-8")
+    title PieceOFCar
+    script(defer, src="script.js")
+    link(rel="stylesheet", href="UploadItem.css")
+    link(rel="stylesheet", href="style.css")
+
+  body
+    include includes/header
+
+    .title
+      h2 Upload Item
+
+    .upload
+      .anotherWrapper
+        form(action="/uploadItem", method="post")
+          .input-box
+            input.login__input(name="car", type="text", required, placeholder="Car")
+          .input-box
+            input.login__input(name="year", type="number", min="1900", required, placeholder="Model year")
+          .input-box
+            input.login__input(name="itemtype", type="text", required, placeholder="Item type")
+          .input-box
+            input.login__input(name="area", type="text", required, placeholder="Area")
+          .input-box
+            input.login__input(name="price", type="number", required, placeholder="Price")
+
+          .submit
+            input.btn(type="submit", value="Upload")
+
+    include includes/footer
+
+  script(type="module", src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js")
+  script(nomodule, src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js")

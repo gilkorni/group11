@@ -1,0 +1,74 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title PieceOFCar
+    script(defer, src="search.js")
+    script(defer, src="script.js")
+    link(rel="stylesheet", href="search.css")
+    link(rel="stylesheet", href="style.css")
+
+  body.preload
+    include includes/header
+
+    .title
+      h2 Search
+
+    .searchWrapper
+      .flex-search
+        form(action="/Search", method="post", name="searchForm")
+          .flex-search
+            .input-box
+              select#carDropdown.search__input(name="car")
+                option(value="") Select car type
+            .input-box
+              input.search__input(name="year", type="number", min="1900", placeholder="Year of model")
+            .input-box
+              select#itemtype.search__input(name="itemtype")
+                option(value="") Select item type
+            .input-box
+              select#areaDropdown.search__input(name="area")
+                option(value="") Select area
+            button.btn(type="search-button") Search
+
+    .tableWrapper
+      table.content-table
+        thead
+          tr
+            th Bids
+            th car
+            th year
+            th item
+            th area
+        tbody
+          if typeof data === 'undefined'
+            p No search results found.
+          else
+            each item in data
+              tr
+                td
+                  button.btn-select(type="select-button", data-modal-target="#modal", data-id=item.id, data-price=item.price) Bid
+                td= item.car
+                td= item.year
+                td= item.itemtype
+                td= item.area
+
+
+    .modal#modal
+      .modal-header
+        .modal-title Bidding information
+        button.close-button(data-close-button) &times;
+      .modal-body
+        p#highestOffer
+        form(action="/submitOffer", method="post")
+          .flex_offer
+            input(type="hidden", name="itemId", id="itemId")
+            input(type="hidden", name="itemPrice", id="itemPrice")
+            input.My_offer(type="number", name="offer", min="0", required, placeholder="My offer")
+            button.make-offer(type="submit") Make offer
+            if typeof error !== 'undefined'
+              p.error-message= error
+
+    #overlay
+
+    include includes/footer

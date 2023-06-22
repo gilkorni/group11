@@ -1,0 +1,135 @@
+
+
+/*
+general
+ */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+}
+
+body{
+    min-height: 100vh;
+    background: #FAF9F3;
+    font-family: Arial, helvetica, sans-serif;
+
+}
+
+
+
+.backButton{
+    position: absolute;
+    left: 20%;
+    color: #FAF9F3;
+    background: #f15555;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 5px 10px; /* increase padding */
+    font-size: 18px; /* increase font size */
+    transition: .5s;
+}
+
+.backButton:hover {
+    background: black;
+    color: #FAF9F3;
+}
+
+.backToHome{
+    margin-bottom: 200px;
+}
+
+/*
+header
+ */
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+.rightUp{
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.leftUp{
+    margin-left: 5%;
+}
+
+.disconnectButton{
+    text-decoration: none;
+    color: black;
+}
+
+header img{
+    width: 150px;
+    position: relative;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    box-shadow : 0 10px 0 #f15555
+}
+
+.title h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    user-select: none;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+/*
+footer
+ */
+
+
+footer{
+    display: flex;
+    width: 100%;
+    padding-right: 250px;
+    margin-top: 20px;
+    justify-content: right;
+    align-items: center;
+    z-index: 99;
+    gap: 40px;
+}
+
+footer p{
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.iconDown1{
+    cursor: pointer;
+    font-size: 1.4em;
+}
+
+.iconDown2{
+    cursor: pointer;
+    font-size: 1.4em;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>PieceOFCar</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="UpdateDetails.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="leftUp"><a class="disconnectButton" href="/signOut">
+          <h2>Disconnect</h2></a></div>
+      <div class="rightUp"><a href="/Home"><img src="car.png"></a><a href="/Home">
+          <h2 data-value="PIECEOFCAR">PIECEOFCAR</h2></a></div>
+    </header>
+    <div class="title">
+      <h2>Update Details</h2>
+    </div>
+    <div class="wrapper">
+      <div class="anotherWrapper">
+        <form action="/UpdateDetails" method="post" onsubmit="return validateUpdateDetails()" name="updateForm">
+          <div class="flex-search">
+            <div class="input-box">
+              <input class="search__input" name="password" type="text" placeholder="Password">
+            </div>
+            <div class="input-box">
+              <input class="search__input" name="name" type="text" placeholder="Full Name">
+            </div>
+            <div class="input-box">
+              <input class="search__input" name="phone" type="text" placeholder="Phone Number">
+            </div>
+            <button class="btn" type="submit">Update</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>contact us:</p><span class="iconDown1">
+        <ion-icon name="call"></ion-icon></span><span class="iconDown2">
+        <ion-icon name="mail"></ion-icon></span>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

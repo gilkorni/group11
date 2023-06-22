@@ -1,0 +1,61 @@
+doctype html
+html(lang="en")
+
+  head
+    meta(charset="UTF-8")
+    title PieceOFCar
+    script(defer, src="script.js")
+    link(rel="stylesheet", href="style.css")
+    link(rel="stylesheet", href="MyItems.css")
+
+  body
+    include includes/header
+
+    .title
+      h2 My Items for sale
+
+    .tableWrapper
+      table.content-table
+        thead
+          tr
+            th delete
+            th date
+            th car
+            th year
+            th itemtype
+            th area
+            th price
+            th buyer
+            th select
+
+
+        tbody
+          if typeof data === 'undefined'
+            p No search results found.
+          else
+            each item in data
+              tr
+                td
+                  form(action="/delete", id="delete", method="post")
+                    button.btn-select(type="submit", id="deleteItem")  delete
+                    input(type="hidden", name="id", value=item.id)
+                td= item.created_at ? item.created_at.toLocaleDateString() : ''
+                td= item.car
+                td= item.year
+                td= item.itemtype
+                td= item.area
+                td= item.price
+                td= item.buyer
+                td
+                  form(action="/sellitem", id="sellitem", method="post")
+                    button.btn-select(type="submit", id="sellItem")  sell
+                    input(type="hidden", name="id", value=item.id)
+                    input(type="hidden", name="car", value=item.car)
+                    input(type="hidden", name="year", value=item.year)
+                    input(type="hidden", name="itemtype", value=item.itemtype)
+                    input(type="hidden", name="area", value=item.area)
+                    input(type="hidden", name="seller", value=item.seller)
+                    input(type="hidden", name="buyer", value=item.buyer)
+                    input(type="hidden", name="price", value=item.price)
+
+  include includes/footer

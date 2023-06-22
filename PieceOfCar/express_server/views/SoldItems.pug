@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title PieceOFCar
+    script(defer, src="script.js")
+    link(rel="stylesheet", href="BoughtItems.css")
+    link(rel="stylesheet", href="style.css")
+
+  body
+    include includes/header
+
+    .title
+      h2 Sold Items
+
+    .tableWrapper
+      table.content-table
+        thead
+          tr
+            th date
+            th car
+            th year
+            th item
+            th area
+            th price
+            th buyer
+        tbody
+          if typeof data === 'undefined'
+            p No search results found.
+          else
+            each item in data
+              tr
+                td= item.created_at.toLocaleDateString()
+                td= item.car
+                td= item.year
+                td= item.itemtype
+                td= item.area
+                td= item.price
+                td= item.buyer
+
+    include includes/footer

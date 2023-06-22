@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+
+  head
+    meta(charset="UTF-8")
+    title PieceOFCar
+    script(defer, src="script.js")
+    link(rel="stylesheet", href="UpdateDetails.css")
+    link(rel="stylesheet", href="style.css")
+
+  body
+    include includes/header
+
+    .title
+      h2 Update Details
+
+    .wrapper
+      .anotherWrapper
+        form(action="/UpdateDetails", method="post", onsubmit="return validateUpdateDetails()", name="updateForm")
+          .flex-search
+            .input-box
+              input.search__input(name="password", type="text", placeholder="Password")
+            .input-box
+              input.search__input(name="name", type="text", placeholder="Full Name")
+            .input-box
+              input.search__input(name="phone", type="text", placeholder="Phone Number")
+            button.btn(type="submit") Update
+
+    include includes/footer
